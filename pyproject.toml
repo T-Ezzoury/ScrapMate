@@ -1,15 +1,26 @@
 [tool.poetry]
 name = "scrapemate"
 version = "0.1.0"
-description = ""
+description = "A lightweight Python package designed for quick and easy web scraping with features to fetch, parse, and extract web content."
 authors = ["Taha EZ-ZOURY <ezzoury.taha@gmail.com>"]
 readme = "README.md"
+homepage = "https://github.com/T-Ezzoury/ScrapMate" 
+repository = "https://github.com/T-Ezzoury/ScrapMate"
+documentation = "https://github.com/T-Ezzoury/ScrapMate"
+keywords = ["web scraping", "html parsing", "python", "beautifulsoup", "requests"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Internet :: WWW/HTTP :: Dynamic Content :: Content Retrieval"
+]
 
 [tool.poetry.dependencies]
 python = "^3.10"
 beautifulsoup4 = "^4.12.3"
 requests = "^2.32.3"
-
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.3"
