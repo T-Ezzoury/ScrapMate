@@ -1,8 +1,15 @@
 # ScrapeMate
 
-ScrapeMate is a lightweight Python package designed for web scraping. It offers functions to fetch web content, parse HTML, and save extracted data.
+ScrapeMate is a lightweight Python package designed for quick and easy web scraping. It provides a simple interface for fetching and parsing web pages to extract useful information.
+
+## Features
+- **Fetch HTML content** from a given URL.
+- **Parse HTML** to extract elements based on tags and class names.
+- **Save extracted data** to various formats (planned for future updates).
 
 ## Installation
-Use Poetry to install dependencies:
+ScrapeMate uses Poetry for dependency management. To install the package and its dependencies, run:
+
 ```bash
 poetry install
+
