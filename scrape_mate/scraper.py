@@ -5,10 +5,11 @@ import logging
 # Set up logging
 logging.basicConfig(
     level=logging.DEBUG,
-    format='%(asctime)s - %(levelname)s - %(message)s',
-    filename='web_scraper.log',
-    filemode='w'
+    format="%(asctime)s - %(levelname)s - %(message)s",
+    filename="web_scraper.log",
+    filemode="w",
 )
+
 
 def fetch_content(url):
     """Fetches content from the given URL."""
@@ -25,18 +26,19 @@ def fetch_content(url):
         logging.critical(f"Request failed for URL {url}: {e}")
         raise
 
+
 def parse_html(html_content, element, class_name=None):
     """Parses the given HTML content and extracts elements."""
     logging.info("Parsing HTML content")
     try:
-        soup = BeautifulSoup(html_content, 'html.parser')
+        soup = BeautifulSoup(html_content, "html.parser")
         if class_name:
-            logging.debug(f"Searching for elements: <{element}> with class '{class_name}'")
+            logging.debug(f"Searching: <{element}> with class '{class_name}'")
             elements = soup.find_all(element, class_=class_name)
         else:
-            logging.debug(f"Searching for elements: <{element}> without specific class")
+            logging.debug(f"Searching for elements: <{element}> without class")
             elements = soup.find_all(element)
-        
+
         logging.info(f"Found {len(elements)} elements of type <{element}>")
         return elements
     except Exception as e:
