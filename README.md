@@ -1,5 +1,7 @@
 # ScrapeMate
 
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 ScrapeMate is a lightweight Python package designed for quick and easy web scraping. It provides a simple interface for fetching and parsing web pages to extract useful information.
 
 ## Features
@@ -65,3 +67,6 @@ This command installs all dependencies and sets up the environment to build, tes
 ## Contributing
 Contributions are welcome! Feel free to fork the project, make improvements, and submit a pull request.
 
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.

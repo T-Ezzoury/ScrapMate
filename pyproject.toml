@@ -4,6 +4,7 @@ version = "0.1.0"
 description = "A lightweight Python package designed for quick and easy web scraping with features to fetch, parse, and extract web content."
 authors = ["Taha EZ-ZOURY <ezzoury.taha@gmail.com>"]
 readme = "README.md"
+license = "MIT"
 homepage = "https://github.com/T-Ezzoury/ScrapMate" 
 repository = "https://github.com/T-Ezzoury/ScrapMate"
 documentation = "https://github.com/T-Ezzoury/ScrapMate"
